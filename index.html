@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ćwiczenie BEM</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="js/script.js"></script>
+</head>
+
+<body class="body js-body">
+  <header class="header">
+    <h1 class="header__mainHeader">Szymon Surówka</h1>
+    <img class="header__myPhoto" src="images/zdjęcie.jpg" alt="Szymon Surówka">
+  </header>
+
+  <nav class="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__item"><a class="navigation__link" href="#Krótko o mnie">Krótko o mnie</a></li>
+      <li class="navigation__item"><a class="navigation__link" href="#Moje zainteresowania">Moje zainteresowania</a>
+      </li>
+      <li class="navigation__item"><a class="navigation__link" href="#Ulubione filmy">Ulubione filmy</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="section" id="Krótko o mnie">
+      <h2>Krótko o mnie</h2>
+      <p>Studiowałem <strong>towaroznawstwo</strong>. Podczas studiów wybrałem specjalizacje <b>zarządzanie jakością
+          wyrobów oraz transport i spedycje</b>. Po zakończeniu studiów chciałem znaleźć pracę w zawodzie spedytora ale
+        niestety nie miałem doświadczenia więc nie udało mi się to. Zainteresowałem się tym kursem ponieważ chcę się
+        przebranżowić.</p>
+      <p>Do tej pory pracowałem jako <span class="section__profession">kucharz</span> i <span
+          class="section__profession">magazynier</span>
+        <i>(głównie za granicą)</i>. W obecnej chwili uczę się <strong>programować</strong>.
+      </p>
+    </section>
+
+    <section class="section" id="Moje zainteresowania">
+      <h2>Moje zainteresowania</h2>
+      <p>Lubię wędrówki górskie oraz spędzać czas ze znajomymi.<br>Dodatkowo czytam biografie znanych ludzi
+        (<em>ostatnio Donalda Trumpa i Elona Muska</em>).</p>
+      <h3>Przykładowe biografie</h3>
+      <img class="section__biography" src="images/DonaldTrump.jpg" alt="Donald Trump">
+      <img class="section__book" src="images/ElonMusk.jpg" alt="Elon Musk">
+    </section>
+
+    <section class="section" id="Ulubione filmy">
+      <h2>Ulubione filmy</h2>
+      <p>Lubię oglądać filmy z serii James Bond. Moim ulubionym odtwórcą głównej roli jest Daniel Craig. W tabeli
+        poniżej przedstawiłem filmy o agencie 007 z jego udziałem wraz z oceną portalu filmweb.</p>
+    </section>
+
+    <div class="table__container">
+      <table class="table">
+        <caption class="table__caption">Daniel Craig w roli Jamesa Bonda.</caption>
+        <tr class="table__row">
+          <th class="table__cell table__cell--header" scope="col">Odtwórca roli Jamesa Bonda</th>
+          <th class="table__cell table__cell--header" scope="col">Tytuł filmu</th>
+          <th class="table__cell table__cell--header" scope="col">Premiera</th>
+          <th class="table__cell table__cell--header" scope="col">Ocena</th>
+        </tr>
+        <tr class="table__row">
+          <th class="table__cell table__cell--header" scope="row" rowspan="5">Daniel Craig</th>
+          <td class="table__cell"><i>Casino Royale</i></td>
+          <td class="table__cell">2006</td>
+          <td class="table__cell">7,5</td>
+        </tr>
+        <tr class="table__row">
+          <td class="table__cell">007 <i>Quantum of Solace</i></td>
+          <td class="table__cell">2008</td>
+          <td class="table__cell">6,7</td>
+        </tr>
+        <tr class="table__row">
+          <td class="table__cell"><i>Skyfall</i></td>
+          <td class="table__cell">2012</td>
+          <td class="table__cell">7,4</td>
+        </tr>
+        <tr class="table__row">
+          <td class="table__cell"><i>Spectre</i></td>
+          <td class="table__cell">2015</td>
+          <td class="table__cell">6,7</td>
+        </tr>
+        <tr class="table__row">
+          <td class="table__cell"><i>No time to die</i></td>
+          <td class="table__cell">2021</td>
+          <td class="table__cell">7,2</td>
+        </tr>
+      </table>
+    </div>
+    <button class="button">Włącz <span class="js-buttonText">ciemny</span> motyw</button>
+  </main>
+  <footer class="copyright">Copyright © Szymon Surówka. Wszystkie prawa zastrzeżone 2021.</footer>
+</body>
+
+</html>

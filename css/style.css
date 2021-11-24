@@ -1,0 +1,119 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    background-color: whitesmoke;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+.header__mainHeader {
+    color: crimson;
+    background-color: burlywood;
+    font-style: italic;
+}
+
+.header__myPhoto {
+    width: 200px;
+    outline: 5px solid green;
+    box-shadow: 5px 2px 17px 10px rgba(39, 181, 75, 0.45);
+    margin-bottom: 20px;
+}
+
+.navigation {
+    padding: 5px;
+}
+.navigation__list {
+    margin-left: 10px;
+}
+
+.navigation__item {
+    margin: 8px 0;
+    background-color: gainsboro;
+    border-radius: 5px;
+    display: inline;
+    padding: 5px 40px;
+}
+
+.navigation__link {
+    text-decoration: none;
+    font-size: larger;
+    font-style: italic;
+}
+
+.section {
+    background-color: gainsboro;
+    border: 2px solid;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding: 5px;
+    outline: 2px solid green;
+    box-shadow: 5px 2px 17px 10px rgba(39, 181, 75, 0.45);
+}
+
+.section__profession {
+    color: darkred;
+}
+
+.section__biography {
+    width: 140px;
+}
+
+.section__book {
+    width: 155px;
+}
+
+.table__container {
+    overflow-x: auto;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.table__caption {
+    caption-side: bottom;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.table__cell {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table__cell--header {
+    background-color: chartreuse;
+}
+
+.table__row:nth-child(even) {
+    background: #eee;
+}
+
+.table__row:hover {
+    background: #ddd;
+}
+
+.dark {
+    background-color: gainsboro;
+    color: darkred;
+}
+
+.copyright {
+    padding: 20px;
+    text-align: center;
+}
