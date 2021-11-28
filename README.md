@@ -13,4 +13,4 @@ https://szymonsurowka.github.io/homepage/
 - CSS
 - JavaScript
 - BEM
-- Flexbox
+
